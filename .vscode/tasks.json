@@ -11,7 +11,7 @@
             "taskName": "build",
             "args": ["run", "build"],
             "isBuildCommand": true
-        }
+        },
         {
             "taskName": "install",
             "args": ["install"]

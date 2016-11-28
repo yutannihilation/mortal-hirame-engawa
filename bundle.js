@@ -2738,6 +2738,7 @@ function sum(series) {
 
 var width = 600;
 var height = 600;
+
 var valuecircle = arc().innerRadius(0).outerRadius(function (d) {
     return d.size;
 }).startAngle(0).endAngle(Math.PI);
