@@ -2742,7 +2742,15 @@ var height = 600;
 var valuecircle = arc().innerRadius(0).outerRadius(function (d) {
     return d.size;
 }).startAngle(0).endAngle(Math.PI);
+
 var svg = select('#test').append('svg').attr('width', width).attr('height', height);
+
 json('data.json', function (error, data) {
-    svg.append("path").data([data]).attr("class", "circle").attr("d", valuecircle);
+    svg.selectAll('.test').data(data).enter().append('circle').attr('cx', function (d) {
+        return d.x;
+    }).attr('cy', function (d) {
+        return d.y;
+    }).attr('r', function (d) {
+        return d.size;
+    }).classed('test', true);
 });
