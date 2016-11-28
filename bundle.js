@@ -2736,9 +2736,6 @@ function sum(series) {
   return s;
 }
 
-///<reference path="node_modules/@types/d3-selection/index.d.ts" />
-///<reference path="node_modules/@types/d3-request/index.d.ts" />
-///<reference path="node_modules/@types/d3-shape/index.d.ts" />
 var width = 600;
 var height = 600;
 var valuecircle = arc().innerRadius(0).outerRadius(function (d) {
